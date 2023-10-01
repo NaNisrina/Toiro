@@ -18,6 +18,10 @@
 
             </div>
 
+            <h4 class="text-center text-white mt-5">
+                What do you want to do today?
+            </h4>
+
             <div class="container px-5">
                 <div class="row gx-5 align-items-center justify-content-center">
 
@@ -32,9 +36,9 @@
                                 sites with Bootstrap, the world's most popular front-end open source
                                 toolkit!</p>
                             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                <a class="btn btn-success btn-lg px-4 me-sm-3" href="/">Get
-                                    Started</a>
-                                <a class="btn btn-outline-light btn-lg px-4" href="/">Learn More</a>
+                                {{-- <a class="btn btn-success btn-lg px-4 me-sm-3" href="/">Get
+                                    Started</a> --}}
+                                <a class="btn btn-outline-light btn-lg px-4" href="/project">Go To Project</a>
                             </div>
                         </div>
                     </div>
@@ -44,7 +48,7 @@
                 </div>
             </div>
 
-            <div class="container px-5">
+            {{-- <div class="container px-5">
                 <div class="row gx-5 align-items-center justify-content-center">
                     <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
                         <img class="img-fluid rounded-3 my-5" src="/img/hating.jpg" alt="..." />
@@ -86,7 +90,7 @@
                         <img class="img-fluid rounded-3 my-5" src="/img/making.jpg" alt="..." />
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
 
     </section>

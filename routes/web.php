@@ -21,8 +21,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 // list
 Route::resource('/project', ProjectController::class);
+
 Route::resource('/today', TodayController::class);
-Route::resource('/yesterday', YesterdayController::class);
+
+// Route::resource('/yesterday', YesterdayController::class);
 
 
 // Route::get('/', function () {

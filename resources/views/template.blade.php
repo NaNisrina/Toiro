@@ -44,11 +44,11 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdownKeuangan" href=""
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">To-do list</a>
-                                
+
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
                                 <li><a class="dropdown-item" href="{{ route('project.index') }}">Project</a></li>
                                 <li><a class="dropdown-item" href="{{ route('today.index') }}">Today</a></li>
-                                <li><a class="dropdown-item" href="{{ route('yesterday.index') }}">Yesterday</a></li>
+                                {{-- <li><a class="dropdown-item" href="{{ route('yesterday.index') }}">Yesterday</a></li> --}}
                             </ul>
                         </li>
 
