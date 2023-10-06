@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- Token -->
+    <meta name="_token" content="{{ csrf_token() }}">
+
     <!-- CSS BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -15,10 +18,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- ANIMATE CSS -->
-    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    {{-- <link rel="stylesheet" href="node_modules/animate.css/animate.min.css"> --}}
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="{{asset('css/template.css')}}">
+
+    <!-- SCSS -->
+    <link rel="stylesheet/less" type="text/css" href="scss/template.scss" />
 
     <title>@yield('page_title')</title>
 </head>
@@ -71,11 +81,11 @@
                     <div class="small m-0 text-white">Copyright &copy; Toiro 2023</div>
                 </div>
                 <div class="col-auto">
-                    <a class="link-light small" href="#">Your</a>
+                    <a class="link-light small" href="#">To-Do List</a>
                     <span class="text-white mx-1">&middot;</span>
-                    <a class="link-light small" href="#">To do</a>
+                    <a class="link-light small" href="#">Of</a>
                     <span class="text-white mx-1">&middot;</span>
-                    <a class="link-light small" href="#">List</a>
+                    <a class="link-light small" href="#">Tomorrow</a>
                 </div>
             </div>
         </div>
@@ -91,7 +101,7 @@
     <script src="https://kit.fontawesome.com/2cef0251ec.js" crossorigin="anonymous"></script>
 
     <!-- JS -->
-    <script src="js/template.js"></script>
+    <script src="{{ asset('js/template.js') }}"></script>
 
 
 </body>

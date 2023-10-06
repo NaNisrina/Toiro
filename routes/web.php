@@ -19,9 +19,24 @@ use Illuminate\Support\Facades\Route;
 
 // home
 Route::get('/', [HomeController::class, 'index'])->name('home');
-// list
-Route::resource('/project', ProjectController::class);
 
+// list project
+    // index
+    Route::resource('/project', ProjectController::class);
+    // API json
+    Route::get('/api/project', [ProjectController::class, 'data'])->name('project.data');
+    // store
+    Route::post('/project', [ProjectController::class, 'store'])->name('project.store');
+    // update status
+    Route::put('/project/status/{id_project}', [ProjectController::class, 'updateStatus'])->name('project.updateStatus');
+    // show edit
+    Route::get('/project/{id_project}', [ProjectController::class, 'show'])->name('project.show');
+    // edit
+    Route::put('/project/{id_project}', [ProjectController::class, 'update'])->name('project.update');
+    // delete
+    Route::delete('/project/{id_project}', [ProjectController::class, 'destroy'])->name('project.delete');
+
+//
 Route::resource('/today', TodayController::class);
 
 // Route::resource('/yesterday', YesterdayController::class);

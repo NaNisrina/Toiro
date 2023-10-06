@@ -1,5 +1,49 @@
+/* Main */
+body {
+    background-color: #212529;
+}
+
 /* Project Card */
 .body_card_project {
-    background-color: rgb(62, 132, 167);
+    background-color: #EA40A4;
     /* border-radius: 1%; */
 }
+
+/* Button */
+.button_orange {
+    background-color: #FF5B57;
+}
+
+/* Hover */
+/* .card:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+}
+.done{
+    background-color: aqua;
+}
+.icon:hover {
+    background-color: brown;
+} */
+
+/* Accordion */
+.accordion_body {
+    background-color: #cfe2ff;
+}
+/* .accordion-button.collapsed {
+    background-color: #EA40A4 !important;
+} */
+.accordion-button.collapsed .description_list{
+    white-space: nowrap;
+    -webkit-line-clamp: 2;
+}
+.accordion-button.collapsed .title_list{
+    white-space: nowrap;
+}
+
+.accordion-button
+{
+    overflow: hidden;
+}
+
+/* Style.css */

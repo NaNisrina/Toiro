@@ -11,7 +11,7 @@ class YesterdayController extends Controller
      */
     public function index()
     {
-        return view('list.yesterday');
+        // return view('list.yesterday');
     }
 
     /**

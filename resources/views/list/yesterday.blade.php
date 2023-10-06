@@ -1,4 +1,4 @@
-@extends('template')
+{{-- @extends('template')
 @section('page_title', 'Yesterday List')
 
 @section('page_content')
@@ -20,4 +20,4 @@
 
     </section>
 
-@endsection
+@endsection --}}
